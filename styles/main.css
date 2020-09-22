@@ -13,6 +13,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 1366px;
 }
 
 .article__text {
@@ -140,5 +141,18 @@ body {
 .article--2 p {
   width: 440px;
   margin-left: 737px;
+}
+
+.article--2 h2 {
+  font-family: "Tungsten Bold";
+  font-size: 96px;
+  color: #FFFFFF;
+  line-height: 83%;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 0;
 }
 /*# sourceMappingURL=main.css.map */

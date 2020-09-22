@@ -3,6 +3,7 @@
     height: 1069px;
     width: 1366px;
     background-image: url("../img/Section2/Section2_Background.png");
+    
 
 
     h1 {
@@ -18,5 +19,13 @@
         margin-left: 737px;
     }
 
-    
+    h2 {
+        font-family: "Tungsten Bold";
+        font-size: $title_size;
+        color: $white;
+        line-height: 83%;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-left: 0;
+    }
 }
