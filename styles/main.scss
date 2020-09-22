@@ -19,6 +19,7 @@ body {
     width: 1366px;
 }
 
+
 .article {
 
     display: flex;
@@ -30,7 +31,7 @@ body {
     &__text {
 
         margin-left: 83px;
-
+    
     h1 {
 
         font-family: "Tungsten Bold";
@@ -55,10 +56,9 @@ body {
 
     }
 
+    }
 
     
-
-    }
 }
 
 @import 'buttons';
