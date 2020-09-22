@@ -1,0 +1,52 @@
+.menu {
+
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: $black;
+    justify-content: space-between;
+    padding: 0 40px;
+
+   
+
+    ul li { 
+
+        display: flex; 
+        color: $white;
+        float: left;  
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0 $spacing;
+      
+    }
+
+    &__login {
+
+        display: flex;
+        align-items: center;
+       
+    
+       p {
+           font-family: Poppins, sans-serif;
+           font-weight: bold;
+           font-size: 10px;
+           text-transform: uppercase;
+           color: $white;
+           margin: 0 $spacing;
+       }
+
+       hr {
+
+        height: 30px;
+        margin: 0px $spacing;
+
+       }
+    
+    
+    } 
+    
+
+}

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url("https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+body {
+  background-color: #101823;
+  width: 1366px;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.article__text {
+  margin-left: 83px;
+}
+
+.article__text h1 {
+  font-family: "Tungsten Bold";
+  font-size: 96px;
+  color: #FFFFFF;
+  line-height: 83%;
+}
+
+.article__text p {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  color: #FFFFFF;
+}
+
+.article__text p strong {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #FF4654;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  border: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  background: #060606;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+}
+
+.menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  float: left;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+.menu__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__login p {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 15px;
+}
+
+.menu__login hr {
+  height: 30px;
+  margin: 0px 15px;
+}
+
+.article--1 {
+  height: 778px;
+  background-image: url("../img/Sección1/DEMUESTRATUVALOR.png");
+}
+
+.article--1 .button {
+  margin-top: 524px;
+  width: 200px;
+  height: 64px;
+  font-size: 20px;
+  margin-left: 68px;
+}
+
+.article--1 h1 {
+  width: 416px;
+}
+
+.article--1 p {
+  width: 430px;
+}
+/*# sourceMappingURL=main.css.map */

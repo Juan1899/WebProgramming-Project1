@@ -1,0 +1,70 @@
+//@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+
+// Colors.
+
+$red: #FF4654;
+$blue: #101823;
+$black: #060606;
+$white:#FFFFFF;
+$spacing: 15px;
+$title_size: 96px;
+$p_size: 19px;
+
+body {
+
+    background-color: $blue;
+    width: 1366px;
+}
+
+.article {
+
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+
+    &__text {
+
+        margin-left: 83px;
+
+    h1 {
+
+        font-family: "Tungsten Bold";
+        font-size: $title_size;
+        color: $white;
+        line-height: 83%;
+    }
+
+    p {
+
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        font-size: $p_size;
+        color: $white;
+
+        strong {
+
+            font-family: Poppins, sans-serif;
+            font-weight: 600;
+        }
+
+    }
+
+    }
+}
+
+@import 'buttons';
+@import 'banner';
+@import 'article1';
+
+
+
+
+
+
+
+        
+    
+
