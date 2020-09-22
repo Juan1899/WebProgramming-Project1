@@ -25,6 +25,8 @@ body {
     flex-direction: row;
     // justify-content: space-between;
 
+    
+
     &__text {
 
         margin-left: 83px;
@@ -36,7 +38,6 @@ body {
         color: $white;
         line-height: 83%;
     }
-
     p {
 
         font-family: Poppins, sans-serif;
@@ -51,6 +52,9 @@ body {
         }
 
     }
+
+
+    
 
     }
 }
