@@ -160,4 +160,14 @@ body {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.article--3 {
+  height: 1280px;
+  width: 1366px;
+  background-image: url("../img/Section2/Section3_Background.png");
+}
+
+.article--3 p {
+  width: 327px;
+}
 /*# sourceMappingURL=main.css.map */
