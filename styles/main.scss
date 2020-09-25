@@ -12,6 +12,8 @@ $white:#FFFFFF;
 $spacing: 15px;
 $title_size: 96px;
 $p_size: 19px;
+$footer_title_size: 48px;
+$footer_p_size: 14px;
 
 body {
 
@@ -61,12 +63,44 @@ body {
     
 }
 
+.footer {
+
+
+    &__text {
+
+        h1 {
+
+            font-family: "Tungsten Bold";
+            font-size: $footer_title_size;
+            color: $white;
+            line-height: 83%;
+
+        }
+
+        p {
+
+            font-family: Poppins, sans-serif;
+            font-weight: 300;
+            font-size: $footer_p_size;
+            color: $white;
+
+            
+    
+        }
+
+    }
+
+
+
+}
+
 @import 'buttons';
 @import 'banner';
 @import 'article1';
 @import 'article2';
 @import 'article3';
 @import 'article4';
+@import 'footer';
 
 
 

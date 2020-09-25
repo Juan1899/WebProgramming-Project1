@@ -39,6 +39,20 @@ body {
   font-weight: 600;
 }
 
+.footer__text h1 {
+  font-family: "Tungsten Bold";
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 83%;
+}
+
+.footer__text p {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
 .button {
   background-color: #FF4654;
   width: 100px;
@@ -175,5 +189,22 @@ body {
   height: 1000px;
   width: 1366px;
   background-image: url("../img/Section4/Section4_Background.png");
+}
+
+.footer {
+  width: 1366px;
+  height: 400px;
+  background-color: #060606;
+}
+
+.footer h1 {
+  width: 406px;
+  margin-left: 133px;
+  margin-top: 127px;
+}
+
+.footer p {
+  width: 370px;
+  margin-left: 133px;
 }
 /*# sourceMappingURL=main.css.map */
