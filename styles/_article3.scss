@@ -1,12 +1,24 @@
 .article--3 {
-
     height: 1280px;
     width: 1366px;
     background-image: url("../img/Section3/Section3_Background.png");
-
-    p{
+    display: flex;
+    flex-direction: column;
+    p {
         width: 327px;
     }
-
-
+    h1 {
+        width: 406px;
+    }
+    .mode {
+        display: flex;
+        section {
+            width: 414px;
+            &:nth-child(2n) {
+                width: 525px;
+                margin: 0px -86px;
+                z-index: 1;
+            }
+        }
+    }
 }
