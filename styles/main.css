@@ -193,6 +193,12 @@ body {
   width: 406px;
 }
 
+.article--3 h2 {
+  font-family: "Tungsten Bold";
+  font-size: 64px;
+  color: #FFFFFF;
+}
+
 .article--3 .mode {
   display: -webkit-box;
   display: -ms-flexbox;
