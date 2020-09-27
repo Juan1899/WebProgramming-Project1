@@ -46,7 +46,7 @@ body {
 .footer__text p {
   font-family: Poppins, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   color: #FFFFFF;
 }
 
@@ -262,17 +262,92 @@ body {
 .footer {
   width: 1366px;
   height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #060606;
+  color: #FFFFFF;
 }
 
 .footer h1 {
-  width: 406px;
-  margin-left: 540px;
-  margin-top: 127px;
+  margin: 20px 0px;
+  font-family: "Tungsten Bold";
+  font-size: 48px;
 }
 
 .footer p {
   width: 370px;
-  margin-left: 83px;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer__socialMedia p {
+  width: 150px;
+}
+
+.footer__socialMedia img {
+  margin-right: 10px;
+}
+
+.footer__socialMedia div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__about div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 30px;
+}
+
+.footer__about div p {
+  width: 150px;
+}
+
+.footer__classification {
+  width: 300px;
+}
+
+.footer__classification div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__classification div p {
+  width: 200px;
 }
 /*# sourceMappingURL=main.css.map */
