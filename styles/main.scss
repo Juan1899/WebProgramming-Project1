@@ -21,25 +21,22 @@ body {
     flex-direction: row;
     width: 1283px;
     padding-left: 83px;
-    
-    // justify-content: space-between;
-    &__text {
-        //margin-left: 83px;
-        h1 {
-            font-family: "Tungsten Bold";
-            font-size: $title_size;
-            color: $white;
-            line-height: 83%;
-        }
-        p {
+
+    h1 {
+        font-family: "Tungsten Bold";
+        font-size: $title_size;
+        color: $white;
+        line-height: 83%;
+    }
+
+    p {
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        font-size: $p_size;
+        color: $white;
+        strong {
             font-family: Poppins, sans-serif;
-            font-weight: 300;
-            font-size: $p_size;
-            color: $white;
-            strong {
-                font-family: Poppins, sans-serif;
-                font-weight: 600;
-            }
+            font-weight: 600;
         }
     }
 }

@@ -1,5 +1,13 @@
 .article--4 {
-
+    display: flex;
+    flex-direction: column;
     height: 1000px;
     background-image: url("../img/Section4/Section4_Background.png");
+
+    img{
+        width: 943px;
+        margin-top: 50px;
+        align-self: center;
+        padding-right: 83px;
+    }
 }

@@ -17,21 +17,21 @@ body {
   padding-left: 83px;
 }
 
-.article__text h1 {
+.article h1 {
   font-family: "Tungsten Bold";
   font-size: 96px;
   color: #FFFFFF;
   line-height: 83%;
 }
 
-.article__text p {
+.article p {
   font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 19px;
   color: #FFFFFF;
 }
 
-.article__text p strong {
+.article p strong {
   font-family: Poppins, sans-serif;
   font-weight: 600;
 }
@@ -239,8 +239,24 @@ body {
 }
 
 .article--4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 1000px;
   background-image: url("../img/Section4/Section4_Background.png");
+}
+
+.article--4 img {
+  width: 943px;
+  margin-top: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 83px;
 }
 
 .footer {
