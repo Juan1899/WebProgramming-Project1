@@ -1,6 +1,5 @@
 .article--3 {
     height: 1280px;
-    width: 1366px;
     background-image: url("../img/Section3/Section3_Background.png");
     display: flex;
     flex-direction: column;
@@ -8,6 +7,7 @@
         width: 327px;
     }
     h1 {
+        margin: 120px 0px -11px 0px;
         width: 406px;
     }
     h2 {
@@ -17,13 +17,28 @@
     }
     .mode {
         display: flex;
-        section {
-            width: 414px;
-            &:nth-child(2n) {
-                width: 525px;
-                margin: 0px -86px;
-                z-index: 1;
+        &--spike{
+            margin-top: 195px;
+        }
+        &--ranked{
+            width: 525px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-left: -86px;
+            z-index: 1;
+        }
+        &--death{
+            flex-direction: column;
+            text-align: right;
+            margin-left: -86px;
+            margin-top: 195px;
+
+            p{
+                margin-left: 87px;
             }
+
         }
     }
 }
