@@ -161,6 +161,10 @@ body {
   margin: 0px;
 }
 
+.banner__info--hidden {
+  display: none;
+}
+
 .article--1 {
   height: 778px;
   background-image: url("../img/Section1/DEMUESTRATUVALOR.png");
