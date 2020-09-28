@@ -191,32 +191,51 @@ body {
   background-image: url("../img/Section2/Section2_Background.png");
 }
 
-.article--2 .killjoy {
-  margin-left: 227px;
+.article--2 .character {
+  margin-left: 100px;
   margin-top: 127px;
+}
+
+.article--2 .character__info {
+  width: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 150px;
+}
+
+.article--2 .character__button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.article--2 .character__button input {
+  width: 100px;
 }
 
 .article--2 h1 {
   width: 406px;
-  margin-left: 133px;
-  margin-top: 127px;
 }
 
 .article--2 p {
   width: 440px;
-  margin-left: 133px;
 }
 
 .article--2 h2 {
   font-family: "Tungsten Bold";
-  font-size: 96px;
-  color: #FFFFFF;
+  font-size: 36px;
   line-height: 83%;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .article--3 {
