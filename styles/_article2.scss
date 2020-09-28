@@ -1,11 +1,13 @@
 .article--2 {
 
     height: 1069px;
-    background-image: url("../img/Section2/Section2_Background.png");    
+    background-image: url("../img/Section2/Section2_Background.png");  
+    
 
     .character{
+        width: 400px;
         margin-left: 100px;
-        margin-top: 127px;
+        align-self: center;
 
         &__info{
             width: 530px;
@@ -41,3 +43,5 @@
         line-height: 83%;
     }
 }
+
+

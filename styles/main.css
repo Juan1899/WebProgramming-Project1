@@ -192,8 +192,11 @@ body {
 }
 
 .article--2 .character {
+  width: 400px;
   margin-left: 100px;
-  margin-top: 127px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .article--2 .character__info {
