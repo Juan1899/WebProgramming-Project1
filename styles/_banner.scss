@@ -44,9 +44,39 @@
         margin: 0px $spacing;
 
        }
-    
-    
     } 
-    
+}
 
+.banner{
+    display: flex;
+    align-items: center;
+    height: 501px;
+    background-image: url("../img/Header/HeaderImage2.png");
+    color: $white;
+    padding-left: 83px;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        h1{
+            width: 400px;
+            font-family: "Tungsten Bold";
+            font-size: 120px;
+            line-height: 83%;
+            margin: 0px;
+        }
+        p{
+            width: 563px;
+            font-family: Poppins, sans-serif;
+            font-weight: 300;
+            font-size: $p_size;
+        }
+
+        button{
+            width: 220px;
+            height: 60px;
+            font-size: 15px;
+            margin: 0px;
+        }
+    }
 }

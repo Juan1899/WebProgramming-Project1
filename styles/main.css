@@ -116,6 +116,51 @@ body {
   margin: 0px 15px;
 }
 
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 501px;
+  background-image: url("../img/Header/HeaderImage2.png");
+  color: #FFFFFF;
+  padding-left: 83px;
+}
+
+.banner__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner__info h1 {
+  width: 400px;
+  font-family: "Tungsten Bold";
+  font-size: 120px;
+  line-height: 83%;
+  margin: 0px;
+}
+
+.banner__info p {
+  width: 563px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+.banner__info button {
+  width: 220px;
+  height: 60px;
+  font-size: 15px;
+  margin: 0px;
+}
+
 .article--1 {
   height: 778px;
   background-image: url("../img/Section1/DEMUESTRATUVALOR.png");
