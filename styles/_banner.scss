@@ -52,6 +52,8 @@
     align-items: center;
     height: 501px;
     background-image: url("../img/Header/HeaderImage2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: $white;
     padding-left: 83px;
 
@@ -81,6 +83,33 @@
 
         &--hidden{
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner{
+        justify-content: center;
+        height: 200px;
+        padding: 0px 40px;
+        text-align: center;
+        h1{
+            width: 200px;
+            font-size: $title_size_mobile;
+            
+        }
+        p{
+            width: 200px;
+            font-size: 10px;
+        }
+        .button{
+            width: 100px;
+            height: 40px;
+            font-size: 12px;
+        }
+
+        &__info{
+            align-items: center;
         }
     }
 }

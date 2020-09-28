@@ -8,18 +8,22 @@ $black: #060606;
 $white:#FFFFFF;
 $spacing: 15px;
 $title_size: 96px;
+$title_size_mobile: 36px;
 $p_size: 19px;
+$p_size_mobile: 13px;
 $footer_title_size: 48px;
 $footer_p_size: 12px;
 body {
     background-color: $blue;
-    width: 1366px;
+    min-width: 375px;
+    max-width: 1366px;
 }
 
 .article {
     display: flex;
     flex-direction: row;
-    width: 1283px;
+    min-width: 295px;
+    max-width: 1283px;
     padding-left: 83px;
 
     h1 {
@@ -41,22 +45,18 @@ body {
     }
 }
 
-.footer {
-    &__text {
-        h1 {
-            font-family: "Tungsten Bold";
-            font-size: $footer_title_size;
-            color: $white;
-            line-height: 83%;
+@media screen and (max-width: 400px) {
+    .article{
+        flex-direction: column;
+        padding: 0px 40px;
+        h1{
+            font-size: $title_size_mobile;
         }
-        p {
-            font-family: Poppins, sans-serif;
-            font-weight: 300;
-            font-size: $footer_p_size;
-            color: $white;
+        p{
+            font-size: $p_size_mobile;
         }
     }
-}
+  }
 
 @import 'buttons';
 @import 'banner';

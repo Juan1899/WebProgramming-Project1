@@ -7,6 +7,7 @@ let imgs = [
 ]
 
 function galleryHandle(){
+    
     gallery.setAttribute('src', imgs[galleryIndex]);
     if(galleryIndex<imgs.length-1){
         galleryIndex++;
@@ -22,6 +23,7 @@ const bannerInfo = document.querySelector('.banner__info');
 let bannerIndex = 1;
 
 function bannerChangeHandle(){
+
     if(bannerIndex == 0){
         banner.style.backgroundImage = "url('./img/Header/HeaderImage1.png')";
         bannerInfo.classList.add('banner__info--hidden');

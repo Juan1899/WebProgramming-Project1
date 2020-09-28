@@ -42,3 +42,41 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .article--3{
+        
+        .mode{
+            width: 100%;
+           // overflow: hidden;
+            flex-direction: column;
+            margin: 0px;
+
+            h1{
+
+            }
+
+            p{
+                width: 100%;
+                text-align: center;
+                font-size: $p_size_mobile;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            &--ranked{
+                width: 100%;
+                margin: 0px;
+            }
+
+            &--death{
+                margin: 0px;
+                p{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

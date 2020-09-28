@@ -2,12 +2,24 @@
     display: flex;
     flex-direction: column;
     height: 1000px;
+    padding-right: 83px;
+
     background-image: url("../img/Section4/Section4_Background.png");
 
     img{
-        width: 943px;
+        width: 980px;
         margin-top: 50px;
         align-self: center;
-        padding-right: 83px;
     }
+
 }
+
+@media screen and (max-width: 400px) {
+    .article--4{
+        padding: 0px 40px;
+        height: 400px;
+        img{
+            width: 315px;
+        }
+    }
+  }
