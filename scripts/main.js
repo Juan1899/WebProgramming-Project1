@@ -23,11 +23,11 @@ let bannerIndex = 1;
 
 function bannerChangeHandle(){
     if(bannerIndex == 0){
-        banner.style.backgroundImage = "url('../img/Header/HeaderImage1.png')";
+        banner.style.backgroundImage = "url('./img/Header/HeaderImage1.png')";
         bannerInfo.classList.add('banner__info--hidden');
         bannerIndex =1;
     }else{
-        banner.style.backgroundImage = "url('../img/Header/HeaderImage2.png')";
+        banner.style.backgroundImage = "url('./img/Header/HeaderImage2.png')";
         bannerInfo.classList.remove('banner__info--hidden');
         bannerIndex =0;
     }    
