@@ -45,15 +45,23 @@
 
 @media screen and (max-width: 400px) {
     .article--3{
+        height: 1530px;
+
+        h1{
+            margin: 0px;
+            width: 100%;
+            padding: 50px 0px;
+        }
         
         .mode{
             width: 100%;
-           // overflow: hidden;
+            height: 1300px;
             flex-direction: column;
+            justify-content: space-between;
             margin: 0px;
 
-            h1{
-
+            h2{
+                font-size: 36px;
             }
 
             p{
@@ -66,13 +74,22 @@
                 width: 100%;
             }
 
+            &--spike{
+                text-align: center;
+                margin: 0px;
+            }
+
             &--ranked{
                 width: 100%;
                 margin: 0px;
             }
 
             &--death{
+                text-align: center;
                 margin: 0px;
+                h1{
+                    
+                }
                 p{
                     margin: 0px;
                 }

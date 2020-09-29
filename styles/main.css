@@ -415,13 +415,28 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .article--3 {
+    height: 1530px;
+  }
+  .article--3 h1 {
+    margin: 0px;
+    width: 100%;
+    padding: 50px 0px;
+  }
   .article--3 .mode {
     width: 100%;
+    height: 1300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0px;
+  }
+  .article--3 .mode h2 {
+    font-size: 36px;
   }
   .article--3 .mode p {
     width: 100%;
@@ -431,11 +446,16 @@ body {
   .article--3 .mode img {
     width: 100%;
   }
+  .article--3 .mode--spike {
+    text-align: center;
+    margin: 0px;
+  }
   .article--3 .mode--ranked {
     width: 100%;
     margin: 0px;
   }
   .article--3 .mode--death {
+    text-align: center;
     margin: 0px;
   }
   .article--3 .mode--death p {
