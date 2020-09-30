@@ -7,7 +7,6 @@
     justify-content: space-between;
     padding: 0 40px;
 
-   
 
     ul li { 
 
@@ -21,6 +20,14 @@
         text-transform: uppercase;
         margin: 0 $spacing;
       
+    }
+
+    &__title{
+        display: none;
+    }
+
+    &__hamburguer{
+        display: none;
     }
 
     &__login {
@@ -88,6 +95,33 @@
 }
 
 @media screen and (max-width: 400px) {
+
+    .menu{
+        padding: 0 20px;
+
+        ul{
+            display: none;
+        }
+
+        
+        &__logo{
+            width: 23px;
+        }
+
+        &__login{
+            display: none;
+        }
+
+        &__title{
+            display: flex;
+            width: 77px;
+        }
+
+        &__hamburguer{
+            display: flex;
+        }
+    }
+
     .banner{
         justify-content: center;
         height: 200px;

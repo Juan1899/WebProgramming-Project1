@@ -44,10 +44,6 @@
 
     &__about{
 
-        &--hidden{
-            display: none;
-        }
-
         div{
             display: flex;
             justify-content: space-between;
@@ -127,6 +123,10 @@
                     margin: 0px; 
                 }
             }
+        }
+
+        &__about{
+            display: none;
         }
 
         &__classification{
