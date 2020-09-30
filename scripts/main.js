@@ -68,3 +68,19 @@ characterButtons.forEach( function (elem,index) {
     elem.addEventListener('click',characterChangeHandle);
     
 });
+
+const footerAbout = document.querySelector('.footer__about');
+let screenWidth = document.querySelector('.footer').clientWidth;
+
+
+function screenChangeHandle() {
+    screenWidth = document.querySelector('.footer').clientWidth;
+   
+    if(screenWidth <= 400){
+        console.log(screenWidth);
+        footerAbout.classList.add('footer__about--hidden');
+    }
+}
+
+setInterval(screenChangeHandle,1000);
+
