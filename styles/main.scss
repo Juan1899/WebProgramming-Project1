@@ -5,7 +5,7 @@
 $red: #FF4654;
 $blue: #101823;
 $black: #060606;
-$white:#FFFFFF;
+$white:#F9F9F9;
 $spacing: 15px;
 $title_size: 96px;
 $title_size_mobile: 36px;
@@ -13,10 +13,25 @@ $p_size: 19px;
 $p_size_mobile: 13px;
 $footer_title_size: 48px;
 $footer_p_size: 12px;
+$poppins: Poppins, sans-serif;
+$tungsten: "Tungsten Bold";
+
+
 body {
     background-color: $blue;
     min-width: 375px;
     max-width: 1366px;
+    
+    a {
+        text-decoration: none;
+        color: $white;  
+
+        :visited {
+        text-decoration: none;  
+        
+
+        }
+    }
 }
 
 .article {
@@ -65,4 +80,5 @@ body {
 @import 'article3';
 @import 'article4';
 @import 'footer';
+@import 'store';
 

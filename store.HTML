@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SKIN STORE</title>
     <link rel="icon" href="img/Header/Valorant Logo Icon.ico" />
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <!-- <link rel="stylesheet" href="styles/main.css"> -->
   </head>
 
   <body>
     <header>
       <nav class="menu">
-        <img
-          class="menu__logo"
-          src="../img/Header/Valorant Logo Nav.png"
-          alt="Valorant Logo"
-        />
-        <hr />
-        <p>SKIN STORE</p>
+        <section>
+          <img
+            class="menu__logo"
+            src="../img/Header/Valorant Logo Nav.png"
+            alt="Valorant Logo"
+          />
+          <hr />
+          <h2>SKIN STORE</h2>
+        </section>
 
         <img class="menu__title" src="./img/Header/VALORANT.png" alt="" />
 
         <img class="menu__hamburguer" src="./img/Header/menu.png" alt="" />
 
         <div class="menu__login">
-          <button class="button"><a href="login.html">INICIAR SESIÓN</a></button>
+          <button class="button">
+            <a href="login.html">INICIAR SESIÓN</a>
+          </button>
           <hr />
           <p><a href="register.html">REGISTRARSE</a></p>
         </div>
@@ -40,24 +44,55 @@
       </section>
     </header>
 
-    <article>
-      <section>
-        <h2>Filtrar Productos</h2>
-        <ul>
-          <li>Colección</li>
-          <li>Arma</li>
-          <li>Edición</li>
-        </ul>
-        <div>
-          <p>Carrito</p>
-        </div>
-      </section>
+    <main>
+      <article>
+        <section class="filters">
+          <h2>Filtrar Productos</h2>
+          <!-- <ul>
+            <li>Colección</li>
+            <li>Arma</li>
+            <li>Edición</li>
+          </ul> -->
+          <div>
+            <select name="Colección" id="">
+              <option value="0">Colección</option>
+              <option value="1">GUN</option>
+              <option value="2">Llamantigua</option>
+              <option value="3">Oni</option>
+              <option value="3">Sakura</option>
+              <option value="4">Suprema</option>
+            </select>
 
-      <section class="container">
-          <div class="product">
+            <select name="Arma" id="">
+              <option value="0">Arma</option>
+              <option value="1">Cuerpo a cuerpo</option>
+              <option value="2">Pistolas</option>
+              <option value="3">Subfusiles</option>
+              <option value="4">Escopetas</option>
+              <option value="5">Rifles</option>
+              <option value="6">Rifles de Francotirador</option>
+              <option value="7">Armas Pesadas</option>
+            </select>
 
+            <select name="Edición" id="">
+              <option value="0">Edición</option>
+              <option value="1">Deluxe</option>
+              <option value="2">Premium</option>
+              <option value="3">Ultra</option>
+              <option value="4">Exclusive</option>
+            </select>
           </div>
-      </section>
-    </article>
+        </section>
+
+        <section>
+          <p>Carrito</p>
+          <img src="./img/Icons/carro-de-la-compra 1.png" alt="" />
+        </section>
+      </article>
+
+      <article class="container">
+        <div class="product"></div>
+      </article>
+    </main>
   </body>
 </html>

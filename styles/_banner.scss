@@ -8,6 +8,29 @@
     padding: 0 40px;
     margin: 0;
 
+    section {
+
+    display: flex;   
+    align-items: center; 
+
+    
+
+        h2 {
+            font-family: "Tungsten Bold";
+            font-size: 24px;
+            color: $white;
+    
+        }
+
+        hr {
+
+            margin: 0px 40px;
+            height: 30px;
+
+        }
+
+    }
+    
 
     ul li { 
 

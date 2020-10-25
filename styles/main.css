@@ -6,6 +6,15 @@ body {
   max-width: 1366px;
 }
 
+body a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+body a :visited {
+  text-decoration: none;
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,7 +31,7 @@ body {
 .article h1 {
   font-family: "Tungsten Bold";
   font-size: 96px;
-  color: #FFFFFF;
+  color: #F9F9F9;
   line-height: 83%;
 }
 
@@ -30,7 +39,7 @@ body {
   font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 19px;
-  color: #FFFFFF;
+  color: #F9F9F9;
 }
 
 .article p strong {
@@ -59,7 +68,7 @@ body {
   width: 100px;
   height: 40px;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: #F9F9F9;
   border: 0;
   font-family: Poppins, sans-serif;
   font-weight: bold;
@@ -81,13 +90,34 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 40px;
+  margin: 0;
+}
+
+.menu section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu section h2 {
+  font-family: "Tungsten Bold";
+  font-size: 24px;
+  color: #F9F9F9;
+}
+
+.menu section hr {
+  margin: 0px 40px;
+  height: 30px;
 }
 
 .menu ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #FFFFFF;
+  color: #F9F9F9;
   float: left;
   font-family: Poppins, sans-serif;
   font-weight: bold;
@@ -119,7 +149,7 @@ body {
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #F9F9F9;
   margin: 0 15px;
 }
 
@@ -139,7 +169,7 @@ body {
   background-image: url("../img/Header/HeaderImage2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #FFFFFF;
+  color: #F9F9F9;
   padding-left: 83px;
 }
 
@@ -308,7 +338,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #FFFFFF;
+  color: #F9F9F9;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -401,7 +431,7 @@ body {
 .article--3 h2 {
   font-family: "Tungsten Bold";
   font-size: 64px;
-  color: #FFFFFF;
+  color: #F9F9F9;
 }
 
 .article--3 .mode {
@@ -537,7 +567,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #060606;
-  color: #FFFFFF;
+  color: #F9F9F9;
 }
 
 .footer h1 {
@@ -687,5 +717,77 @@ body {
   .footer__classification div p {
     width: 76px;
   }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 72px 0px;
+}
+
+main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1004px;
+  height: 115px;
+}
+
+main article .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main article .filters h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  color: #F9F9F9;
+}
+
+main article .filters div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 380px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main article .filters div select {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  width: 112px;
+  background-color: transparent;
+  border: none;
+  color: #F9F9F9;
+  outline: none;
+}
+
+main article .filters div select option {
+  background-color: #101823;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
