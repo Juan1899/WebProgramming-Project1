@@ -77,6 +77,16 @@ body a :visited {
   margin: 0 15px;
 }
 
+.button--form {
+  width: 204px;
+  height: 52px;
+  font-size: 14px;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+  margin-bottom: 16px;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,9 +730,9 @@ body a :visited {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -730,9 +740,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
   padding: 72px 0px;
 }
 
@@ -743,6 +751,9 @@ main article {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 1004px;
   height: 115px;
 }
@@ -779,7 +790,6 @@ main article .filters div {
 main article .filters div select {
   font-family: Poppins, sans-serif;
   font-size: 18px;
-  width: 112px;
   background-color: transparent;
   border: none;
   color: #F9F9F9;
@@ -789,5 +799,123 @@ main article .filters div select {
 main article .filters div select option {
   background-color: #101823;
   font-size: 16px;
+}
+
+main .container {
+  background-color: white;
+  width: 1000px;
+  height: 250px;
+}
+
+.cart--filter {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart--filter p {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  color: #F9F9F9;
+  margin: 0;
+}
+
+.authentication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url("/img/Backgrounds/background1.png");
+  padding-top: 76px;
+}
+
+.authentication h1 {
+  font-family: "Tungsten Bold";
+  font-size: 144px;
+  color: #F9F9F9;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F9F9F9;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  color: #101823;
+  padding: 40px;
+  width: 452px;
+}
+
+form h3 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+form a {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #101823;
+  text-align: center;
+}
+
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 28px;
+}
+
+form div p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+form label {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #101823;
+  margin-bottom: 28px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form input[type="checkbox"] {
+  width: 20px;
+  margin-bottom: 0px;
+  margin-right: 16px;
 }
 /*# sourceMappingURL=main.css.map */

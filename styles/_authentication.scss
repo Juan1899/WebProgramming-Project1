@@ -1,0 +1,18 @@
+.authentication {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url("/img/Backgrounds/background1.png");
+  
+  padding-top: 76px;
+
+  h1 {
+
+    font-family: $tungsten;
+    font-size: 144px;
+    color: $white;
+  }
+
+  
+}

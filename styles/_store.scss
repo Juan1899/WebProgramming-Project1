@@ -1,12 +1,13 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 72px 0px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 72px 0px;
   article {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     width: 1004px;
     height: 115px;
 
@@ -28,12 +29,11 @@ main {
         select {
           font-family: $poppins;
           font-size: 18px;
-          width: 112px;
+
           background-color: transparent;
           border: none;
           color: $white;
           outline: none;
-        
 
           option {
             background-color: $blue;
@@ -42,5 +42,11 @@ main {
         }
       }
     }
+  }
+
+  .container {
+    background-color: white;
+    width: 1000px;
+    height: 250px;
   }
 }

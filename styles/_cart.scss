@@ -1,0 +1,15 @@
+.cart {
+  &--filter {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-family: $poppins;
+      font-size: 18px;
+      color: $white;
+      margin: 0;
+    }
+  }
+}

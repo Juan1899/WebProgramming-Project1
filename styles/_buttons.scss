@@ -1,14 +1,21 @@
 .button {
-    background-color: $red;
-    width: 100px;
-    height: 40px;
-    border-radius: 3px;
-    color: $white;
-    border: 0;
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    font-size: 10px;
-    text-transform: uppercase;
-    margin: 0 $spacing;
+  background-color: $red;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  color: $white;
+  border: 0;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 0 $spacing;
 
-} 
+  &--form {
+    width: 204px;
+    height: 52px;
+    font-size: 14px;
+    align-self: center !important;
+    margin-bottom: 16px;
+  }
+}
