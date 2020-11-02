@@ -802,9 +802,69 @@ main article .filters div select option {
 }
 
 main .container {
-  background-color: white;
   width: 1000px;
-  height: 250px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 53px;
+}
+
+main .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  background-color: #F9F9F9;
+  border-radius: 2px;
+  margin-bottom: 23px;
+}
+
+main .product h2 {
+  font-family: "Tungsten Bold";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #101823;
+}
+
+main .product p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #101823;
+}
+
+main .product div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .product div p {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+main .product div strong {
+  font-size: 20px;
 }
 
 .cart--filter {

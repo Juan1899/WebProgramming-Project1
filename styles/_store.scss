@@ -45,8 +45,50 @@ main {
   }
 
   .container {
-    background-color: white;
     width: 1000px;
-    height: 250px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 53px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background-color: $white;
+    border-radius: 2px;
+    margin-bottom: 23px;
+
+    h2 {
+      font-family: $tungsten;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+
+      color: #101823;
+    }
+
+    p{
+      font-family: $poppins;
+      font-size: 14px;
+      color: #101823;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      p {
+        font-weight: bold;
+        margin-left: 8px;
+      }
+
+      strong{
+        font-size: 20px;
+      }
+    }
   }
 }
