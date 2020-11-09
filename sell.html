@@ -37,5 +37,36 @@
         <p class="logout">CERRAR SESIÓN</p>
       </div>
     </nav>
+
+    <main class="profile">
+      <h1>VENDER</h1>
+      <form class="sell" action="">
+        <h3>Datos del producto.</h3>
+
+        <label for="title">TÍTULO</label>
+        <input type="text" name="title" value="" />
+
+        <label for="price">PRECIO</label>
+        <input type="number" name="price" value="" />
+
+        <label for="edition">EDICIÓN</label>
+        <input type="text" name="edition" value="" />
+
+        <label for="image">IMAGEN</label>
+        <input type="file" name="image" value="" />
+
+        <label for="description">DESCRIPCIÓN</label>
+        <textarea name="description" ></textarea>
+        
+        <button class="button button--form">VENDER</button>
+      </form>
+    </main>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+  <script src="./scripts/firebase.js"></script>
+  <script src="./scripts/auth.js"></script>
+  <script src="./scripts/sell.js"></script>
 </html>

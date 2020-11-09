@@ -999,6 +999,10 @@ form input[type="checkbox"] {
   margin-right: 16px;
 }
 
+form input[type="file"] {
+  border-bottom: none;
+}
+
 .profile {
   width: 100%;
   display: -webkit-box;

@@ -48,10 +48,16 @@ form {
     &:focus {
       outline: none;
     }
+
+    &[type="checkbox"] {
+      width: 20px;
+      margin-bottom: 0px;
+      margin-right: 16px;
+    }
+
+    &[type="file"] {
+      border-bottom: none;
+    }
   }
-  input[type="checkbox"] {
-    width: 20px;
-    margin-bottom: 0px;
-    margin-right: 16px;
-  }
+
 }

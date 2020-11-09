@@ -18,7 +18,10 @@ firebase.auth().onAuthStateChanged(function(user){
                 element.innerText = data.name;
             });
 
-            email.innerText = data.email;
+            if(email){
+                email.innerText = data.email;
+            }
+            
              
         });
     }else{
