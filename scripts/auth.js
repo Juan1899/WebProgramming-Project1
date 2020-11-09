@@ -1,7 +1,8 @@
-const username = document.querySelector('.username'); 
+const username = document.querySelectorAll('.username'); 
 const login = document.querySelector('.menu__login');
 const userinfo = document.querySelector('.userinfo');
 const logout = document.querySelector('.logout');
+const email = document.querySelector('.email'); 
 
 firebase.auth().onAuthStateChanged(function(user){
 
@@ -13,7 +14,12 @@ firebase.auth().onAuthStateChanged(function(user){
         usersRef.doc(user.uid).get()
         .then(function(doc){
             const data = doc.data(); 
-            username.innerText = data.name; 
+            username.forEach(element => {
+                element.innerText = data.name;
+            });
+
+            email.innerText = data.email;
+             
         });
     }else{
         userinfo.classList.add('hidden');

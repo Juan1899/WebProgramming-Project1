@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/Header/Valorant Logo Icon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Header/Valorant Logo Icon.ico" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <title>Mi Perfil</title>
-</head>
-<body>
-    
-</body>
-<script src="./scripts/auth.js"></script>
+  </head>
+  <body>
+    <nav class="menu">
+      <section>
+        <img
+          class="menu__logo"
+          src="../img/Header/Valorant Logo Nav.png"
+          alt="Valorant Logo"
+        />
+        <hr />
+        <h2>SKIN STORE</h2>
+      </section>
+
+      <img class="menu__title" src="./img/Header/VALORANT.png" alt="" />
+
+      <img class="menu__hamburguer" src="./img/Header/menu.png" alt="" />
+
+      <div class="menu__login">
+        <button class="button">
+          <a href="login.html">INICIAR SESIÓN</a>
+        </button>
+        <hr />
+        <p><a href="register.html">REGISTRARSE</a></p>
+      </div>
+
+      <div class="userinfo hidden">
+        <p class="username">Name</p>
+        <p class="logout">CERRAR SESIÓN</p>
+      </div>
+    </nav>
+    <main class="profile">
+      <h1>MI PERFIL</h1>
+      <div>
+        <h3>Mis datos</h3>
+        <p>NOMBRE</p>
+        <p class="username"></p>
+        <p>EMAIL</p>
+        <p class="email"></p>
+        
+        <button class="button button--form"><a href="sell.html">VENDER UN PRODUCTO</a></button>
+      </div>
+    </main>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+  <script src="./scripts/firebase.js"></script>
+  <script src="./scripts/profile.js"></script>
+  <script src="./scripts/auth.js"></script>
 </html>
