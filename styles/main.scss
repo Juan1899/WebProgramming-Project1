@@ -1,11 +1,11 @@
 //@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url("https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 // Colors.
-$red: #FF4654;
+$red: #ff4654;
 $blue: #101823;
 $black: #060606;
-$white:#F9F9F9;
+$white: #f9f9f9;
 $spacing: 15px;
 $title_size: 96px;
 $title_size_mobile: 36px;
@@ -16,72 +16,87 @@ $footer_p_size: 12px;
 $poppins: Poppins, sans-serif;
 $tungsten: "Tungsten Bold";
 
-
 body {
-    background-color: $blue;
-    min-width: 375px;
-    max-width: 1366px;
-    
-    a {
-        text-decoration: none;
-        color: $white;  
+  background-color: $blue;
+  min-width: 375px;
+  max-width: 1366px;
 
-        :visited {
-        text-decoration: none;  
-        
+  a {
+    text-decoration: none;
+    color: $white;
 
-        }
+    :visited {
+      text-decoration: none;
     }
+  }
 }
 
+.userinfo {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: $white;
+  align-items: center;
+
+  .logout {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
 .article {
-    display: flex;
-    flex-direction: row;
-    min-width: 295px;
-    max-width: 1283px;
-    padding-left: 83px;
+  display: flex;
+  flex-direction: row;
+  min-width: 295px;
+  max-width: 1283px;
+  padding-left: 83px;
 
-    h1 {
-        font-family: "Tungsten Bold";
-        font-size: $title_size;
-        color: $white;
-        line-height: 83%;
-    }
+  h1 {
+    font-family: "Tungsten Bold";
+    font-size: $title_size;
+    color: $white;
+    line-height: 83%;
+  }
 
-    p {
-        font-family: Poppins, sans-serif;
-        font-weight: 300;
-        font-size: $p_size;
-        color: $white;
-        strong {
-            font-family: Poppins, sans-serif;
-            font-weight: 600;
-        }
+  p {
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: $p_size;
+    color: $white;
+    strong {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
     }
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .article{
-        flex-direction: column;
-        padding: 0px 40px;
-        h1{
-            font-size: $title_size_mobile;
-        }
-        p{
-            font-size: $p_size_mobile;
-        }
+  .article {
+    flex-direction: column;
+    padding: 0px 40px;
+    h1 {
+      font-size: $title_size_mobile;
+    }
+    p {
+      font-size: $p_size_mobile;
     }
   }
+}
 
-@import 'buttons';
-@import 'banner';
-@import 'article1';
-@import 'article2';
-@import 'article3';
-@import 'article4';
-@import 'footer';
-@import 'store';
-@import 'cart';
-@import 'authentication';
-@import 'form';
+@import "buttons";
+@import "banner";
+@import "article1";
+@import "article2";
+@import "article3";
+@import "article4";
+@import "footer";
+@import "store";
+@import "cart";
+@import "authentication";
+@import "form";
 
+.hidden {
+  display: none;
+}

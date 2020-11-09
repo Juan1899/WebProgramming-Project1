@@ -8,11 +8,31 @@ body {
 
 body a {
   text-decoration: none;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 body a :visited {
   text-decoration: none;
+}
+
+.userinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #f9f9f9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userinfo .logout {
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .article {
@@ -31,7 +51,7 @@ body a :visited {
 .article h1 {
   font-family: "Tungsten Bold";
   font-size: 96px;
-  color: #F9F9F9;
+  color: #f9f9f9;
   line-height: 83%;
 }
 
@@ -39,7 +59,7 @@ body a :visited {
   font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 19px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .article p strong {
@@ -64,11 +84,11 @@ body a :visited {
 }
 
 .button {
-  background-color: #FF4654;
+  background-color: #ff4654;
   width: 100px;
   height: 40px;
   border-radius: 3px;
-  color: #F9F9F9;
+  color: #f9f9f9;
   border: 0;
   font-family: Poppins, sans-serif;
   font-weight: bold;
@@ -115,7 +135,7 @@ body a :visited {
 .menu section h2 {
   font-family: "Tungsten Bold";
   font-size: 24px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .menu section hr {
@@ -127,7 +147,7 @@ body a :visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #F9F9F9;
+  color: #f9f9f9;
   float: left;
   font-family: Poppins, sans-serif;
   font-weight: bold;
@@ -159,7 +179,7 @@ body a :visited {
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase;
-  color: #F9F9F9;
+  color: #f9f9f9;
   margin: 0 15px;
 }
 
@@ -179,7 +199,7 @@ body a :visited {
   background-image: url("../img/Header/HeaderImage2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #F9F9F9;
+  color: #f9f9f9;
   padding-left: 83px;
 }
 
@@ -348,7 +368,7 @@ body a :visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #F9F9F9;
+  color: #f9f9f9;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -441,7 +461,7 @@ body a :visited {
 .article--3 h2 {
   font-family: "Tungsten Bold";
   font-size: 64px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .article--3 .mode {
@@ -577,7 +597,7 @@ body a :visited {
       -ms-flex-align: center;
           align-items: center;
   background-color: #060606;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 .footer h1 {
@@ -774,7 +794,7 @@ main article .filters {
 main article .filters h2 {
   font-family: Poppins, sans-serif;
   font-size: 24px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 main article .filters div {
@@ -792,7 +812,7 @@ main article .filters div select {
   font-size: 18px;
   background-color: transparent;
   border: none;
-  color: #F9F9F9;
+  color: #f9f9f9;
   outline: none;
 }
 
@@ -826,7 +846,7 @@ main .product {
       -ms-flex-align: center;
           align-items: center;
   width: 320px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border-radius: 2px;
   margin-bottom: 23px;
 }
@@ -883,7 +903,7 @@ main .product div strong {
 .cart--filter p {
   font-family: Poppins, sans-serif;
   font-size: 18px;
-  color: #F9F9F9;
+  color: #f9f9f9;
   margin: 0;
 }
 
@@ -907,7 +927,7 @@ main .product div strong {
 .authentication h1 {
   font-family: "Tungsten Bold";
   font-size: 144px;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 
 form {
@@ -918,7 +938,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   font-family: Poppins, sans-serif;
   font-weight: bold;
   color: #101823;
@@ -977,5 +997,9 @@ form input[type="checkbox"] {
   width: 20px;
   margin-bottom: 0px;
   margin-right: 16px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
