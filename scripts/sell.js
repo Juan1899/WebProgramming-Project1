@@ -2,7 +2,7 @@ const product = document.querySelector('.sell');
 
 console.log(product);
 
-var imagePaths;
+var imagePaths = [];
 
 product.addEventListener('submit', function(event){
     event.preventDefault();
@@ -25,10 +25,11 @@ product.addEventListener('submit', function(event){
         product.title.value = '';
         product.price.value = '';
         product.edition.value = '';
-        product.image.value = '';
+        product.cardImage.value = '';
+        product.productImage.value = '';
         product.description.value = '';
 
-        imagePaths = ""; 
+        imagePaths = []; 
     }
     
     function handleCatch (error) {
@@ -42,26 +43,27 @@ product.addEventListener('submit', function(event){
     
 });
 
-const image = product.image;
+const images = product.querySelectorAll('input[type=file]');
 
-console.log(image);
-
-image.addEventListener('change', function () {
+images.forEach(element => {
+    element.addEventListener('change', function () {
   
-    // Create a reference to 'mountains.jpg'
-    var newImageRef = storageRef.child(`products/${Math.floor(Math.random()*999999999)}.jpg`);
-
-    var file = image.files[0];
-
-    newImageRef.put(file).then(function(snapshot) {
-      console.log(snapshot)
-      console.log('Uploaded a blob or file!');
-      imagePaths = snapshot.metadata.fullPath;
-      console.log(imagePaths);
-    });
-
+        // Create a reference to 'mountains.jpg'
+        var newImageRef = storageRef.child(`products/${element.name}${Math.floor(Math.random()*999999999)}.jpg`);
     
+        var file = element.files[0];
+    
+        newImageRef.put(file).then(function(snapshot) {
+          console.log(snapshot)
+          
+          imagePaths.push(snapshot.metadata.fullPath);
+          alert('Imagen cargada');
+        });
+    
+        
+    });
 });
+
 
 
 

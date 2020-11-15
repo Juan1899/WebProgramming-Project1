@@ -23,7 +23,7 @@ main {
       }
       div {
         display: flex;
-        width: 380px;
+        width: fit-content;
         justify-content: space-between;
 
         select {
@@ -52,7 +52,7 @@ main {
     margin-top: 53px;
   }
 
-  .product {
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,12 @@ main {
     background-color: $white;
     border-radius: 2px;
     margin-bottom: 23px;
-
+    
+    a {
+    text-decoration: none;
+    color: $blue;
+    
+    }
     h2 {
       font-family: $tungsten;
       font-weight: bold;
@@ -70,7 +75,7 @@ main {
       color: #101823;
     }
 
-    p{
+    p {
       font-family: $poppins;
       font-size: 14px;
       color: #101823;
@@ -86,7 +91,7 @@ main {
         margin-left: 8px;
       }
 
-      strong{
+      strong {
         font-size: 20px;
       }
     }

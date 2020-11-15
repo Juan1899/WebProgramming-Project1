@@ -39,6 +39,11 @@ body {
   color: $white;
   align-items: center;
 
+  img {
+
+    margin-left: 16px;
+  }
+
   .logout {
     margin-left: 16px;
     font-weight: 600;
@@ -97,6 +102,7 @@ body {
 @import "authentication";
 @import "form";
 @import "profile";
+@import "product"; 
 
 .hidden {
   display: none;

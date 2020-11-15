@@ -28,6 +28,10 @@ body a :visited {
           align-items: center;
 }
 
+.userinfo img {
+  margin-left: 16px;
+}
+
 .userinfo .logout {
   margin-left: 16px;
   font-weight: 600;
@@ -105,6 +109,11 @@ body a :visited {
       -ms-grid-row-align: center !important;
       align-self: center !important;
   margin-bottom: 16px;
+}
+
+.button--cart {
+  background-color: transparent;
+  border: 1px solid #f9f9f9;
 }
 
 .menu {
@@ -801,7 +810,9 @@ main article .filters div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 380px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -834,7 +845,7 @@ main .container {
   margin-top: 53px;
 }
 
-main .product {
+main .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -851,7 +862,12 @@ main .product {
   margin-bottom: 23px;
 }
 
-main .product h2 {
+main .card a {
+  text-decoration: none;
+  color: #101823;
+}
+
+main .card h2 {
   font-family: "Tungsten Bold";
   font-weight: bold;
   font-size: 36px;
@@ -859,13 +875,13 @@ main .product h2 {
   color: #101823;
 }
 
-main .product p {
+main .card p {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   color: #101823;
 }
 
-main .product div {
+main .card div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,12 +894,12 @@ main .product div {
           align-items: center;
 }
 
-main .product div p {
+main .card div p {
   font-weight: bold;
   margin-left: 8px;
 }
 
-main .product div strong {
+main .card div strong {
   font-size: 20px;
 }
 
@@ -1066,6 +1082,90 @@ form input[type="file"] {
 
 .profile p:nth-child(2n) {
   font-weight: bold;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px;
+}
+
+.product button {
+  width: 150px;
+  height: 48px;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 24px;
+}
+
+.product section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product h1 {
+  font-family: "Tungsten Bold";
+  font-size: 96px;
+  color: #f9f9f9;
+  line-height: 83%;
+}
+
+.product h2 {
+  font-family: "Tungsten Bold";
+  font-size: 64px;
+  color: #f9f9f9;
+  line-height: 83%;
+}
+
+.product p {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  color: #f9f9f9;
+  margin: 0px;
+}
+
+.product__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.product__price img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-right: 10px;
+}
+
+.product__edition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__edition img {
+  margin-right: 10px;
+}
+
+.product__carrousel {
+  margin-right: 40px;
+}
+
+.product__info h2 {
+  margin-top: 0px;
 }
 
 .hidden {

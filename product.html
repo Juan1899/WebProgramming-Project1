@@ -20,7 +20,7 @@
             alt="Valorant Logo"
           />
           <hr />
-          <h2>SKIN STORE</h2>
+          <a href="./store.html"><h2>SKIN STORE</h2></a>
         </section>
 
         <img class="menu__title" src="./img/Header/VALORANT.png" alt="" />
@@ -37,65 +37,38 @@
 
         <div class="userinfo hidden">
           <a href="./profile.html"><p class="username">Name</p></a>
+
           <a href="./cart.html"
             ><img src="./img/Icons/carro-de-la-compra 1.png" alt=""
           /></a>
           <p class="logout">CERRAR SESIÓN</p>
         </div>
       </nav>
-
-      <section class="banner">
-        <div class="banner__info">
-          <h1>COLECCIÓN ONI</h1>
-          <p>Disponible por tiempo limitado</p>
-        </div>
-      </section>
     </header>
 
-    <main>
-      <article>
-        <section class="filters">
-          <h2>Filtrar Productos</h2>
-
-          <div>
-            <select name="Colección" id="">
-              <option value="0">Colección</option>
-              <option value="1">GUN</option>
-              <option value="2">Llamantigua</option>
-              <option value="3">Oni</option>
-              <option value="3">Sakura</option>
-              <option value="4">Suprema</option>
-            </select>
-
-            <select name="Arma" id="">
-              <option value="0">Arma</option>
-              <option value="1">Cuerpo a cuerpo</option>
-              <option value="2">Pistolas</option>
-              <option value="3">Subfusiles</option>
-              <option value="4">Escopetas</option>
-              <option value="5">Rifles</option>
-              <option value="6">Rifles de Francotirador</option>
-              <option value="7">Armas Pesadas</option>
-            </select>
-
-            <select name="Edición" id="">
-              <option value="0">Edición</option>
-              <option value="1">Deluxe</option>
-              <option value="2">Premium</option>
-              <option value="3">Ultra</option>
-              <option value="4">Exclusive</option>
-            </select>
+    <article class="product">
+      <h1>PRODUCTO</h1>
+      <section>
+        <div class="product__carrousel"></div>
+        <div class="product__info">
+          <h2></h2>
+          <div class="product__price">
+            <img src="/img/Icons/vp.png" alt="ValorantPoints.png" />
+            <p></p>
           </div>
-        </section>
-
-        <section class="cart--filter">
-          <p><a href="./cart.html">Carrito</a></p>
-          <img src="./img/Icons/carro-de-la-compra 1.png" alt="" />
-        </section>
-      </article>
-
-      <article class="container"></article>
-    </main>
+          <div class="product__edition">
+            <img src="./" alt="" />
+            <p></p>
+          </div>
+          <div>
+            <button class="button">COMPRAR</button>
+            <button class="button button--cart">Agregar al Carrito</button>
+          </div>
+        </div>
+      </section>
+      <h2>DESCRIPCIÓN</h2>
+      <p class="product__description"></p>
+    </article>
   </body>
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
@@ -103,5 +76,5 @@
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
   <script src="./scripts/firebase.js"></script>
   <script src="./scripts/auth.js"></script>
-  <script src="./scripts/store.js"></script>
+  <script src="./scripts/product.js"></script>
 </html>

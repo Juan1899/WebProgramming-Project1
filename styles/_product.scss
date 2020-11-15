@@ -1,0 +1,65 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+
+  button {
+    width: 150px;
+    height: 48px;
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 24px;
+  }
+
+  section {
+    display: flex;
+  }
+
+  h1 {
+    font-family: $tungsten;
+    font-size: $title_size;
+    color: $white;
+    line-height: 83%;
+  }
+  h2 {
+    font-family: $tungsten;
+    font-size: 64px;
+    color: $white;
+    line-height: 83%;
+  }
+
+  p {
+    font-family: $poppins;
+    font-size: 24px;
+    color: $white;
+    margin: 0px;
+  }
+
+  &__price {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+    img {
+      filter: invert(1);
+      margin-right: 10px;
+    }
+  }
+  &__edition {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__carrousel {
+    margin-right: 40px;
+  }
+
+  &__info {
+    h2 {
+      margin-top: 0px;
+    }
+  }
+}
