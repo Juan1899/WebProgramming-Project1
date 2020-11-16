@@ -903,6 +903,10 @@ main .card div strong {
   font-size: 20px;
 }
 
+main .card__button {
+  cursor: pointer;
+}
+
 .cart--filter {
   width: 100px;
   display: -webkit-box;

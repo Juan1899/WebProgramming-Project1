@@ -32,19 +32,60 @@ window.addEventListener('load', function () {
 
             }
 
+            function addProduct() {
+                firebase.auth().onAuthStateChanged(function (user) {
+                    if (user) {
+                        // si el usuario existe quiere decir que inició sesión, se registró o ya tenía sesión iniciada
+
+                        usersRef.doc(user.uid).collection('cart').doc(uid)
+                            .get() // pide todos los documentos de la colección
+                            .then((snapshot) => {
+                                const object = snapshot.data();
+                                if (object) {
+                                    alert('el producto ya fue agregado al carrito');
+                                } else {
+                                    usersRef.doc(user.uid).collection('cart').doc(uid)
+                                        .set(product)
+                                        .then(function () {
+                                            console.log('se agrego');
+                                        });
+                                }
+
+                            });
+
+                    } else {
+                        // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
+                        alert("debes iniciar sesion");
+                    }
+                });
+            }
+
+            const btnAddCart = document.querySelector('.button--cart');
+
+            btnAddCart.addEventListener('click', function () {
+                addProduct();
+            });
+
 
             info.querySelector('h2').innerText = product.title;
             info.querySelector('.product__price').querySelector('p').innerText = product.price;
             info.querySelector('.product__edition').querySelector('p').innerText = product.edition;
 
             //Dependiendo del producto, cambia la imagen de la edición. 
-            info.querySelector('.product__edition').querySelector('img').src = `./img/icons/${product.edition}.png`
+            info.querySelector('.product__edition').querySelector('img').src = `./img/Icons/${product.edition}.png`
 
             //Descripción del producto.. 
             article.querySelector('.product__description').innerText = product.description;
 
-        })
+        });
+
+
 });
+
+
+
+
+
 
 
 
