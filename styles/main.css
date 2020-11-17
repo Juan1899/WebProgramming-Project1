@@ -1,5 +1,9 @@
-@import url("https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+@font-face {
+  font-family: "Tungsten Bold";
+  src: url("../font/tungsten.woff2") format("woff2");
+}
+
 body {
   background-color: #101823;
   min-width: 375px;
@@ -806,7 +810,7 @@ main article .filters h2 {
   color: #f9f9f9;
 }
 
-main article .filters div {
+main article .filters form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,7 +822,7 @@ main article .filters div {
           justify-content: space-between;
 }
 
-main article .filters div select {
+main article .filters form select {
   font-family: Poppins, sans-serif;
   font-size: 18px;
   background-color: transparent;
@@ -827,7 +831,7 @@ main article .filters div select {
   outline: none;
 }
 
-main article .filters div select option {
+main article .filters form select option {
   background-color: #101823;
   font-size: 16px;
 }
@@ -842,6 +846,9 @@ main .container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 53px;
 }
 
@@ -907,6 +914,38 @@ main .card__button {
   cursor: pointer;
 }
 
+.cart {
+  font-family: "Tungsten Bold";
+  color: #f9f9f9;
+}
+
+.cart h1 {
+  font-weight: bold;
+  font-size: 144px;
+  margin: 72px 0px;
+  margin-top: 0px;
+}
+
+.cart h3 {
+  font-size: 24px;
+}
+
+.cart section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .cart--filter {
   width: 100px;
   display: -webkit-box;
@@ -925,6 +964,16 @@ main .card__button {
   font-size: 18px;
   color: #f9f9f9;
   margin: 0;
+}
+
+.cart__info {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .authentication {
@@ -950,7 +999,7 @@ main .card__button {
   color: #f9f9f9;
 }
 
-form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -966,39 +1015,39 @@ form {
   width: 452px;
 }
 
-form h3 {
+.form h3 {
   font-size: 24px;
   line-height: 24px;
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-form a {
+.form a {
   font-family: Poppins, sans-serif;
   font-size: 14px;
   color: #101823;
   text-align: center;
 }
 
-form div {
+.form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 28px;
 }
 
-form div p {
+.form div p {
   font-size: 14px;
   font-weight: 400;
   margin: 0px;
 }
 
-form label {
+.form label {
   font-size: 12px;
   margin-bottom: 10px;
 }
 
-form input {
+.form input {
   font-size: 16px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -1009,17 +1058,17 @@ form input {
   margin-bottom: 28px;
 }
 
-form input:focus {
+.form input:focus {
   outline: none;
 }
 
-form input[type="checkbox"] {
+.form input[type="checkbox"] {
   width: 20px;
   margin-bottom: 0px;
   margin-right: 16px;
 }
 
-form input[type="file"] {
+.form input[type="file"] {
   border-bottom: none;
 }
 

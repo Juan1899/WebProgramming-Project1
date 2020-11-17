@@ -21,7 +21,7 @@ main {
         font-size: 24px;
         color: $white;
       }
-      div {
+      form {
         display: flex;
         width: fit-content;
         justify-content: space-between;
@@ -49,6 +49,7 @@ main {
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 53px;
   }
 

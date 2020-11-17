@@ -1,4 +1,27 @@
 .cart {
+  font-family: $tungsten;
+  color: $white;
+
+  h1{
+    font-weight: bold;
+    font-size: 144px;
+    margin: 72px 0px;
+    margin-top: 0px;
+  }
+
+  h3{
+    font-size: 24px;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  button{
+    align-self: center;
+  }
+
   &--filter {
     width: 100px;
     display: flex;
@@ -11,5 +34,11 @@
       color: $white;
       margin: 0;
     }
+  }
+
+  &__info{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
   }
 }

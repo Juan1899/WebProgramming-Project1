@@ -1,7 +1,7 @@
-const container = document.querySelector('.container');
+const cartContainer = document.querySelector('.container');
 
 function renderProducts(list) {
-  container.innerHTML = '';
+  cartContainer.innerHTML = '';
 
   list.forEach(function (elem) {
     const newProduct = document.createElement('section');
@@ -73,15 +73,16 @@ function renderProducts(list) {
 
     });
 
-    container.appendChild(newProduct);
+    cartContainer.appendChild(newProduct);
   });
 }
+
+const objects = [];
 
 function getProducts() {
   productsRef  // referencia de la colección
     .get() // pide todos los documentos de la colección
     .then((querySnapshot) => {
-      const objects = [];
       querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
@@ -94,3 +95,128 @@ function getProducts() {
 
 // render inicial con todos los productos
 getProducts();
+
+//filtros
+
+const filters = document.querySelector('.filters').querySelector('form');
+
+console.log(filters);
+
+filters.addEventListener('input', function () {
+  let copy = objects.slice();
+
+  const collection = filters.collection.value;
+
+  if (collection != '') {
+    copy = copy.filter(function (elem) {
+      if (elem.title.toLowerCase().includes(collection)) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  }
+
+  const gun = filters.gun.value;
+
+  if (gun != '') {
+    console.log(gun);
+    switch (parseInt(gun)) {
+      case 1:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('daga') ||
+            elem.title.toLowerCase().includes('hacha') ||
+            elem.title.toLowerCase().includes('garra') ||
+            elem.title.toLowerCase().includes('bastón')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      case 2:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('classic') ||
+            elem.title.toLowerCase().includes('shorty') ||
+            elem.title.toLowerCase().includes('sheriff')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      case 3:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('spectre')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      case 4:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('judge')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      case 5:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('vandal') ||
+            elem.title.toLowerCase().includes('phantom') ||
+            elem.title.toLowerCase().includes('guardian')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      case 6:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('operator')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      case 7:
+        copy = copy.filter(function (elem) {
+          if (elem.title.toLowerCase().includes('ares')) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        break;
+
+      default:
+        break;
+    }
+
+  }
+
+  const edition = filters.edition.value;
+
+  if (edition != '') {
+    copy = copy.filter(function (elem) {
+      if (elem.edition.toLowerCase().includes(edition)) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  }
+
+
+  renderProducts(copy);
+});

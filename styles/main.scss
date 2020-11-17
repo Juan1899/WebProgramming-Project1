@@ -1,5 +1,10 @@
 //@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url("https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold");
+//@import url("https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten+Bold");
+@font-face {
+  font-family: "Tungsten Bold";
+  src: url("../font/tungsten.woff2") format("woff2")
+  }
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 // Colors.
 $red: #ff4654;

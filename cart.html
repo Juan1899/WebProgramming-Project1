@@ -11,13 +11,15 @@
   <body>
     <header>
       <nav class="menu">
-        <img
-          class="menu__logo"
-          src="../img/Header/Valorant Logo Nav.png"
-          alt="Valorant Logo"
-        />
-        <hr />
-        <h2><a href="store.html">SKIN STORE</a></h2>
+        <section>
+          <img
+            class="menu__logo"
+            src="./img/Header/Valorant Logo Nav.png"
+            alt="Valorant Logo"
+          />
+          <hr />
+          <h2>SKIN STORE</h2>
+        </section>
 
         <img class="menu__title" src="./img/Header/VALORANT.png" alt="" />
 
@@ -30,16 +32,36 @@
           <hr />
           <p><a href="register.html">REGISTRARSE</a></p>
         </div>
+
+        <div class="userinfo hidden">
+          <a href="./profile.html"><p class="username">Name</p></a>
+          <a href="./cart.html"
+            ><img src="./img/Icons/carro-de-la-compra 1.png" alt=""
+          /></a>
+          <p class="logout">CERRAR SESIÓN</p>
+        </div>
       </nav>
     </header>
-
-    <article>
+    <main class="cart">
       <h1>CARRITO DE COMPRAS</h1>
+      <div class="cart__info">
+        <h3 class="cart__count"># de Artículos</h3>
+        <h3 class="cart__price">Precio Total:</h3>
+      </div>
       <section>
-        <h3># de Artículos</h3>
-        <section class="cart__container"></section>
+        <div class="container"></div>
         <button class="button">COMPRAR</button>
       </section>
-    </article>
+
+    </main>
+
   </body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+  <script src="./scripts/firebase.js"></script>
+  <script src="./scripts/auth.js"></script>
+  <script src="./scripts/cart.js"></script>
 </html>
