@@ -1,5 +1,6 @@
 const cartContainer = document.querySelector('.container');
 
+// Renderiza la card del producto seleccionado al carrito.    
 function renderCart(list) {
   cartContainer.innerHTML = '';
 
@@ -21,8 +22,10 @@ function renderCart(list) {
             <img src="./img/Icons/vp.png" alt="" />
             <p><strong>${elem.price}</strong></p>
           </div>
+          <p class="card__button">Eliminar del carrito</p>
           `;
 
+           
     if (elem.storageImgs) {
 
       elem.storageImgs.forEach(function (imageRef) {
@@ -42,8 +45,31 @@ function renderCart(list) {
 
     }
 
+    //Permite borrar elementos del carrito. 
+    const deleteBtn = newProduct.querySelector('.card__button');
+    deleteBtn.addEventListener('click', function () {
+
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          // si el usuario existe quiere decir que inició sesión, se registró o ya tenía sesión iniciada
+          usersRef.doc(user.uid).collection('cart').doc(elem.id)
+            .delete() // pide todos los documentos de la colección
+            .then((snapshot) => {
+              alert(`Se eliminó ${elem.title} del carrito`);
+              getCart();
+            });
+
+        } else {
+          // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
+          alert("debes iniciar sesion");
+        }
+      });
+
+    });
+
+    //Añade el producto. 
     cartContainer.appendChild(newProduct);
-    console.log("se agrega");
+    console.log("Producto agregado");
   });
 }
 
