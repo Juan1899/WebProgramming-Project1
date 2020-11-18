@@ -7,12 +7,13 @@ register.addEventListener('submit',function(event){
     const email = register.email.value;
     const password = register.password.value;
 
+    //Datos requeridos por el sistema para crear el usuario. 
     firebase.auth().createUserWithEmailAndPassword(email,password)
     .then(function(credentials) {
 
         const uid = credentials.user.uid;
         usersRef.doc(uid).set({
-
+            //Datos que se muestran en el perfil del usuario.
             name: name,
             email: email
         })

@@ -56,6 +56,7 @@ function renderCart(list) {
             .delete() // pide todos los documentos de la colección
             .then((snapshot) => {
               alert(`Se eliminó ${elem.title} del carrito`);
+              //Recarga la página para actualizar el precio. 
               getCart();
             });
 
@@ -88,20 +89,26 @@ function getCart() {
         .get()
         .then((querySnapshot) => {
           const objects = [];
+          //Impide que se sigan sumando los precios cuando se quitan productos del carrito. 
+          total = 0; 
           querySnapshot.forEach((doc) => {
             const obj = doc.data();
             obj.id = doc.id;
+            //Suma de los precios de los productos. Hay que parsear a int porque firebase almacena 
+            //el campo de número del formulario como un string. 
             total += parseInt(obj.price);
             objects.push(obj);
             console.log(`${doc.id} => ${doc.data()}`);
           });
 
+          //Si hay un solo producto, lo escribe en singular. Si hay varios, en plural. 
           if (objects.length === 1) {
             count.innerText = `${objects.length} Artículo`;
           } else {
             count.innerText = `${objects.length} Artículos`;
           }
 
+          //Visualizar el precio total de los productos. 
           price.innerText = `Precio total: ${total}`;
 
           renderCart(objects);

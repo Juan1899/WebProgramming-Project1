@@ -54,12 +54,14 @@ function renderProducts(list) {
             .then((snapshot) => {
               const object = snapshot.data();
               if (object) {
-                alert('el producto ya fue agregado al carrito');
+                //Si el producto ya existe dentro del carrito, se le informará al usuario. 
+                alert('¡Este producto ya se encuentra en tu carrito!');
               } else {
                 usersRef.doc(user.uid).collection('cart').doc(elem.id)
                   .set(elem)
                   .then(function () {
-                    console.log('el producto se agrego');
+                    //Alert para cuando se agrega un nuevo producto al carrito.  
+                    console.log('¡Producto agregado a tu carrito!');
                   });
               }
 
@@ -67,7 +69,7 @@ function renderProducts(list) {
 
         } else {
           // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
-          alert("debes iniciar sesion");
+          alert("Debes iniciar sesion");
         }
       });
 
@@ -103,8 +105,12 @@ const filters = document.querySelector('.filters').querySelector('form');
 console.log(filters);
 
 filters.addEventListener('input', function () {
+
+  //Variable para copiar la información de los productos y usar la información copiada
+  // para aplicar los filtros. 
   let copy = objects.slice();
 
+  // Filtro por colección del arma. 
   const collection = filters.collection.value;
 
   if (collection != '') {
@@ -117,6 +123,7 @@ filters.addEventListener('input', function () {
     });
   }
 
+  // Filtro por tipo de arma. 
   const gun = filters.gun.value;
 
   if (gun != '') {
@@ -205,6 +212,7 @@ filters.addEventListener('input', function () {
 
   }
 
+  // Filtro por edición del arma. 
   const edition = filters.edition.value;
 
   if (edition != '') {
@@ -219,4 +227,5 @@ filters.addEventListener('input', function () {
 
 
   renderProducts(copy);
+
 });
