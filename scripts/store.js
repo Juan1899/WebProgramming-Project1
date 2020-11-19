@@ -69,7 +69,7 @@ function renderProducts(list) {
 
         } else {
           // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
-          alert("Debes iniciar sesion");
+          alert("Por favor inicia sesión");
         }
       });
 

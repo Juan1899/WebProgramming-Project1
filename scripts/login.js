@@ -15,6 +15,7 @@ register.addEventListener('submit',function(event){
     })
     .catch(function(error){
 
+        alert('Los datos ingresados son erróneos o no existen')
         console.log(error.message);
 
     });
