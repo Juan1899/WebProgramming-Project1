@@ -60,8 +60,8 @@ function renderProducts(list) {
                 usersRef.doc(user.uid).collection('cart').doc(elem.id)
                   .set(elem)
                   .then(function () {
-                    //Alert para cuando se agrega un nuevo producto al carrito.  
-                    console.log('¡Producto agregado a tu carrito!');
+                    //Alert para notificar al usuario cuando se agrega un nuevo producto al carrito.  
+                    alert('¡Producto agregado a tu carrito!');
                   });
               }
 

@@ -60,4 +60,36 @@
     }
   }
 
+  &--checkout {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 979px;
+    padding: 72px;
+    box-sizing: border-box;
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 310px;
+      margin: 0px px;
+      
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+
+      input {
+
+        width: 135px;
+      }
+    }
+  }
+
 }

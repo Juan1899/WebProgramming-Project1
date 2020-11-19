@@ -942,10 +942,11 @@ main .card__button {
           flex-direction: column;
 }
 
-.cart button {
+.cart a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 .cart--filter {
@@ -999,6 +1000,72 @@ main .card__button {
   font-family: "Tungsten Bold";
   font-size: 144px;
   color: #f9f9f9;
+}
+
+.profile {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url("/img/Backgrounds/background2.png");
+  padding: 0px 126px;
+  padding-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profile div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 40px;
+  width: 452px;
+  background-color: #f9f9f9;
+  margin-bottom: 67px;
+}
+
+.profile button {
+  margin-top: 24px;
+}
+
+.profile h1 {
+  font-family: "Tungsten Bold";
+  font-size: 96px;
+  color: #f9f9f9;
+  margin-top: 38px;
+  margin-bottom: 64px;
+}
+
+.profile h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.profile p {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  color: #101823;
+}
+
+.profile p:nth-child(2n) {
+  font-weight: bold;
 }
 
 .form {
@@ -1074,25 +1141,25 @@ main .card__button {
   border-bottom: none;
 }
 
-.profile {
-  width: 100%;
+.form--checkout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background-image: url("/img/Backgrounds/background2.png");
-  padding: 0px 126px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 979px;
+  padding: 72px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.profile div {
+.form--checkout section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,43 +1167,28 @@ main .card__button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 40px;
-  width: 452px;
-  background-color: #f9f9f9;
-  margin-bottom: 67px;
+  width: 310px;
+  margin: 0px px;
 }
 
-.profile button {
-  margin-top: 24px;
+.form--checkout div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
-.profile h1 {
-  font-family: "Tungsten Bold";
-  font-size: 96px;
-  color: #f9f9f9;
-  margin-top: 38px;
-  margin-bottom: 64px;
-}
-
-.profile h3 {
-  font-family: Poppins, sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
-
-.profile p {
-  font-family: Poppins, sans-serif;
-  font-weight: 300;
-  color: #101823;
-}
-
-.profile p:nth-child(2n) {
-  font-weight: bold;
+.form--checkout div input {
+  width: 135px;
 }
 
 .product {

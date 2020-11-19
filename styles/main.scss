@@ -105,10 +105,11 @@ body {
 @import "store";
 @import "cart";
 @import "authentication";
-@import "form";
 @import "profile";
+@import "form";
 @import "product"; 
 
 .hidden {
   display: none;
 }
+

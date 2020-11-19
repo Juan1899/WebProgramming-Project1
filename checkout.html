@@ -3,48 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Confirmar Compra</title>
     <link rel="icon" href="img/Header/Valorant Logo Icon.ico" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <title>Confirmar Compra</title>
   </head>
   <body>
-    <header>
-      <nav class="menu">
-        <img
-          class="menu__logo"
-          src="./img/Header/Valorant Logo Nav.png"
-          alt="Valorant Logo"
-        />
-        <hr />
-        <h2><a href="store.html">SKIN STORE</a></h2>
-
-        <img class="menu__title" src="./img/Header/VALORANT.png" alt="" />
-
-        <img class="menu__hamburguer" src="./img/Header/menu.png" alt="" />
-
-        <div class="menu__login">
-          <button class="button">
-            <a href="login.html">INICIAR SESIÓN</a>
-          </button>
-          <hr />
-          <p><a href="register.html">REGISTRARSE</a></p>
-        </div>
-      </nav>
-    </header>
-
-    <article>
-      <h1>INFORMACIÓN PAGO</h1>
+    <nav class="menu">
       <section>
-        <h3>Completa tus datos</h3>
-        <label for="name">NOMBRE</label>
-        <input type="text" name="name" value="" />
-        <label for="document">CÉDULA</label>
-        <input type="text" name="document" value="" />
-        <label for="riotID">RIOT ID #</label>
-        <input type="text" name="riotID" value="" />
-        <input type="submit" value="CONFIRMAR COMPRA" />
+        <a href="index.html"><img class="menu__logo" src="./img/Header/Valorant Logo Nav.png"alt="Valorant Logo"/></a>
+        <hr />
+
+        <h2><a href="store.html">SKIN STORE</a></h2>
       </section>
-    </article>
+
+      <img class="menu__title" src="./img/Header/VALORANT.png" alt="" />
+
+      <img class="menu__hamburguer" src="./img/Header/menu.png" alt="" />
+
+      <div class="menu__login">
+        <button class="button">
+          <a href="login.html">INICIAR SESIÓN</a>
+        </button>
+        <hr />
+        <p><a href="register.html">REGISTRARSE</a></p>
+      </div>
+
+      <div class="userinfo hidden">
+        <a href="./profile.html"><p class="username">Name</p></a>
+        <p class="logout">CERRAR SESIÓN</p>
+      </div>
+    </nav>
+
+    <main class="profile">
+      <h1>INFORMACIÓN DE PAGO</h1>
+      <form class="form form--checkout checkout" action="">
+        <section>
+          <h3>Completa tus datos</h3>
+
+          <label for="name">NOMBRE</label>
+          <input type="text" name="name" value="" />
+
+          <label for="id">CÉDULA</label>
+          <input type="number" name="id" value="" />
+
+          <label for="riotID">RIOT ID</label>
+          <input type="text" name="riotID" value="" />
+        </section>
+        <section>
+          <h3>Información de tarjeta</h3>
+          <label for="cardNumber">NÚMERO DE TARJETA</label>
+          <input type="number" name="cardNumber" value="" />
+
+          <label for="expire">VENCIMIENTO</label>
+          <div>
+            <input type="number" name="expireMonth" value="" />
+            <input type="number" name="expireYear" value="" />
+          </div>
+
+          <label for="code">CÓDIGO DE SEGURIDAD</label>
+          <input type="text" name="code" value="" />
+        </section>
+
+        <button class="button button--form">CONFIRMAR COMPRA</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <section class="footer__logo">
+        <img src="./img/Footer/Footer_Logo.png" alt="VALORANT_Logo.png" />
+        <p>
+          © 2020 Riot Games, Inc. Riot Games, VALORANT y cualquier logo asociado
+          son marcas, marcas de servicio o marcas registradas de Riot Games,
+          Inc.
+        </p>
+      </section>
+      <section>
+        <div>
+          <h1>SÍGUENOS</h1>
+          <div class="footer__socialMedia">
+            <div>
+              <img
+                src="./img/Footer/Instagram_Logo.png"
+                alt="Instagram_Logo.png"
+              />
+              <p>/playvalorantofficial</p>
+
+              <img src="./img/Footer/Youtube_Logo.png" alt="YouTube_Logo.png" />
+              <p>/PlayValorant</p>
+            </div>
+            <div>
+              <img src="./img/Footer/Twitter_Logo.png" alt="Twitter_Logo.png" />
+              <p>/PlayVALORANT</p>
+
+              <img
+                src="./img/Footer/Facebook_Logo.png"
+                alt="Facebook_Logo.png"
+              />
+              <p>/PlayVALORANT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__about">
+          <h1>SOBRE NOSOTROS</h1>
+          <div>
+            <p>Política de privacidad</p>
+            <p>Términos de servicio</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer__classification">
+        <h1>CLASIFICACIÓN</h1>
+        <div>
+          <img
+            src="./img/Footer/Classification_Teen.png"
+            alt="Classification_Teen.png"
+          />
+          <p>
+            Sangre <br />
+            Lenguaje <br />
+            Violencia <br />
+            Interacción de usuarios <br />
+            Compras dentro del juego
+          </p>
+        </div>
+      </section>
+    </footer>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+  <script src="./scripts/firebase.js"></script>
+  <script src="./scripts/auth.js"></script>
+  <script src="./scripts/checkout.js"></script>
 </html>

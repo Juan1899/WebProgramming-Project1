@@ -18,8 +18,9 @@
     flex-direction: column;
   }
 
-  button{
+  a{
     align-self: center;
+    cursor: pointer;
   }
 
   &--filter {
