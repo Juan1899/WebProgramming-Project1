@@ -1,5 +1,7 @@
 const cartContainer = document.querySelector('.container');
 
+//const cart
+
 function renderProducts(list) {
   cartContainer.innerHTML = '';
 
@@ -13,6 +15,7 @@ function renderProducts(list) {
     
         <h2><a href="${url}">${elem.title}</a></h2>
         <img src="" alt="" />
+        <section class="card__cont">
         <div>
           <img src="./img/Icons/${elem.edition}.png" alt="" />
           <p>${elem.edition}</p>
@@ -22,7 +25,11 @@ function renderProducts(list) {
           <p><strong>${elem.price}</strong></p>
         </div>
         <p class="card__button">Agregar al carrito</p>
+
+        </section>
+        
         `;
+
 
     if (elem.storageImgs) {
 
@@ -34,7 +41,6 @@ function renderProducts(list) {
 
             img.src = url;
           }
-
 
         }).catch(function (error) {
 
@@ -76,6 +82,15 @@ function renderProducts(list) {
     });
 
     cartContainer.appendChild(newProduct);
+    TweenMax.set(newProduct,{height: 0});
+
+    var tl = new TimelineLite();
+
+    tl = new TimelineLite();
+    tl.to(newProduct, 1, {
+      height: "402px",
+      ease: Expo.easeInOut
+    });
   });
 }
 

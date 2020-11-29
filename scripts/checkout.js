@@ -18,6 +18,8 @@ firebase.auth().onAuthStateChanged(function (user) {
 });
 
 const form = document.querySelector('.checkout');
+const button =document.querySelector('.button--form');
+console.log(button);
 
 form.addEventListener('submit', (event) => {
 
@@ -74,4 +76,6 @@ form.addEventListener('submit', (event) => {
 
             alert('¡Gracias por tu compra!')
         })
+
+        
 })

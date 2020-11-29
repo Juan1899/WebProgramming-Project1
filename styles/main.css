@@ -7,7 +7,6 @@
 body {
   background-color: #101823;
   min-width: 375px;
-  max-width: 1366px;
 }
 
 body a {
@@ -103,6 +102,7 @@ body a :visited {
   font-size: 10px;
   text-transform: uppercase;
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .button--form {
@@ -839,7 +839,7 @@ main article .filters form select option {
 }
 
 main .container {
-  width: 1000px;
+  width: 1200px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -848,13 +848,13 @@ main .container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 53px;
 }
 
 main .card {
+  height: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,6 +869,20 @@ main .card {
   background-color: #f9f9f9;
   border-radius: 2px;
   margin-bottom: 23px;
+  overflow: hidden;
+}
+
+main .card section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .card a {
@@ -891,6 +905,9 @@ main .card p {
 }
 
 main .card div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -70,7 +70,15 @@ function renderCart(list) {
 
     //Añade el producto. 
     cartContainer.appendChild(newProduct);
-    console.log("Producto agregado");
+    TweenMax.set(newProduct,{height: 0});
+
+    var tl = new TimelineLite();
+
+    tl = new TimelineLite();
+    tl.to(newProduct, 1, {
+      height: "402px",
+      ease: Expo.easeInOut
+    });
   });
 }
 
