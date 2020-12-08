@@ -1,3 +1,4 @@
+var soundPath;
 window.addEventListener('load', function () {
 
     const parts = location.search.split('-');
@@ -71,6 +72,8 @@ window.addEventListener('load', function () {
             info.querySelector('.product__price').querySelector('p').innerText = product.price;
             info.querySelector('.product__edition').querySelector('p').innerText = product.edition;
 
+            soundPath = product.soundPath;
+            
             //Dependiendo del producto, cambia la imagen de la edición. 
             info.querySelector('.product__edition').querySelector('img').src = `./img/Icons/${product.edition}.png`
 
@@ -81,6 +84,64 @@ window.addEventListener('load', function () {
 
 
 });
+
+// sound pts code
+
+
+(function () {
+
+    Pts.quickStart("#pt", "#101823");
+
+    // Note: use Sound.loadAsBuffer instead if you need support for Safari/iOS browser. (as of Apr 2019)
+    // See this example: http://ptsjs.org/demo/edit/?name=sound.analyze
+
+    var sound;
+    var bins = 256;
+
+    // Load sound
+    Sound.load(`./sound/${soundPath}`).then(s => {
+        console.log(s);
+        sound = s.analyze(bins);
+    }).catch(e => console.error(e));
+
+
+    // Draw play button
+    function playButton() {
+        if (!sound || !sound.playing) {
+            form.fillOnly("#ff4654").rect([[0, 0], [50, 50]]);
+            form.fillOnly('#fff').polygon(Triangle.fromCenter([25, 25], 10).rotate2D(Const.half_pi, [25, 25]));
+        } else {
+            form.fillOnly("rgba(0,0,0,.2)").rect([[0, 0], [50, 50]]);
+            form.fillOnly("#fff").rect([[18, 18], [32, 32]]);
+        }
+    }
+
+
+    // animation
+    space.add({
+        animate: (time, ftime) => {
+
+            if (sound && sound.playable) {
+                sound.freqDomainTo(space.size).forEach((t, i) => {
+                    form.fillOnly("#ff4654").point(t, 2, 'circle');
+                });
+            }
+            //form.line(td);
+            playButton();
+        },
+
+        action: (type, x, y) => {
+            if (type === "up") { // clicked button
+                sound.toggle();
+            }
+        }
+    });
+
+    //// ----
+
+    space.bindMouse().bindTouch().play();
+
+})();
 
 
 
