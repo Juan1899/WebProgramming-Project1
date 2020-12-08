@@ -56,7 +56,7 @@ window.addEventListener('load', function () {
 
                     } else {
                         // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
-                        alert("debes iniciar sesion");
+                        alert("Por favor inicia sesión");
                     }
                 });
             }
