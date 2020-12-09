@@ -1292,6 +1292,12 @@ main .card__button {
   margin-top: 0px;
 }
 
+.product__sound {
+  margin-top: 64px;
+  width: 100%;
+  height: 50px;
+}
+
 .hidden {
   display: none;
 }
