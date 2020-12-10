@@ -55,7 +55,9 @@ function renderCart(list) {
           usersRef.doc(user.uid).collection('cart').doc(elem.id)
             .delete() // pide todos los documentos de la colección
             .then((snapshot) => {
-              alert(`Se eliminó ${elem.title} del carrito`);
+              const p = document.querySelector('#modal-removed-content').querySelector('p');
+                    p.innerText = `Se ha eliminado ${elem.title} de tu carrito.`;
+                    MicroModal.show('modal-removed');
               //Recarga la página para actualizar el precio. 
               getCart();
             });
