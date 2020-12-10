@@ -1379,6 +1379,7 @@ main .card__button {
 }
 
 .modal__content p {
+  width: 100%;
   font-size: 15px;
   text-align: left;
 }

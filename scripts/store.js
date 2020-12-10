@@ -62,7 +62,9 @@ function renderProducts(list) {
               const object = snapshot.data();
               if (object) {
                 //Si el producto ya existe dentro del carrito, se le informará al usuario. 
-                alert('¡Este producto ya se encuentra en tu carrito!');
+                const p = document.querySelector('#modal-repeat-content').querySelector('p');
+                p.innerText = `El producto ${elem.title} ya se encuentra en tu carrito.`;
+                MicroModal.show('modal-repeat');
               } else {
                 usersRef.doc(user.uid).collection('cart').doc(elem.id)
                   .set(elem)
