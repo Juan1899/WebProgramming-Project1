@@ -1,9 +1,5 @@
 const cartContainer = document.querySelector('.container');
 
-MicroModal.init({
-  disableScroll: true, // [6]
-  disableFocus: true, // [7]
-});
 
 //const cart
 
@@ -83,7 +79,7 @@ function renderProducts(list) {
 
         } else {
           // si no existe quiere decir que no ha iniciado sesión o acaba de cerrar sesión
-          alert("Por favor inicia sesión");
+          MicroModal.show('modal-login');
         }
       });
 

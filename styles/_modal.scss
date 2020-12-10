@@ -43,6 +43,11 @@
 .modal__close {
     background: transparent;
     border: 0;
+
+    :focus{
+        border: none;
+        outline: white auto 1px;
+    }
 }
 
 .modal__header .modal__close:before {

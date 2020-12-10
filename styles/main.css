@@ -1359,6 +1359,11 @@ main .card__button {
   border: 0;
 }
 
+.modal__close :focus {
+  border: none;
+  outline: white auto 1px;
+}
+
 .modal__header .modal__close:before {
   content: "\2715";
 }
