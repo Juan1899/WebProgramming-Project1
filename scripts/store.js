@@ -1,5 +1,10 @@
 const cartContainer = document.querySelector('.container');
 
+MicroModal.init({
+  disableScroll: true, // [6]
+  disableFocus: true, // [7]
+});
+
 //const cart
 
 function renderProducts(list) {
@@ -67,7 +72,10 @@ function renderProducts(list) {
                   .set(elem)
                   .then(function () {
                     //Alert para notificar al usuario cuando se agrega un nuevo producto al carrito.  
-                    alert('¡Producto agregado a tu carrito!');
+                    //alert('¡Producto agregado a tu carrito!');
+                    const p = document.querySelector('#modal-add-content').querySelector('p');
+                    p.innerText = `Agregaste ${elem.title} a tu carrito.`;
+                    MicroModal.show('modal-add');
                   });
               }
 
@@ -104,7 +112,6 @@ function getProducts() {
         const obj = doc.data();
         obj.id = doc.id;
         objects.push(obj);
-        console.log(`${doc.id} => ${doc.data()}`);
       });
       renderProducts(objects);
     });
@@ -116,8 +123,6 @@ getProducts();
 //filtros
 
 const filters = document.querySelector('.filters').querySelector('form');
-
-console.log(filters);
 
 filters.addEventListener('input', function () {
 
