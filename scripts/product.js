@@ -114,7 +114,7 @@ window.addEventListener('load', function () {
             
                         if (sound && sound.playable) {
                             sound.freqDomainTo(space.size).forEach((t, i) => {
-                                form.fillOnly("#ff4654").point(t, 2, 'circle');
+                                form.fillOnly("#ff4654").point(t, 3, 'circle');
                             });
                         }
                         //form.line(td);
