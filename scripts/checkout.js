@@ -74,7 +74,8 @@ form.addEventListener('submit', (event) => {
             form.expireYear.value = '';
             form.code.value = '';
 
-            alert('¡Gracias por tu compra!')
+        
+                    MicroModal.show('modal-checkout');
         })
 
         

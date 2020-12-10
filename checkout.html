@@ -68,6 +68,24 @@
         <button class="button button--form">CONFIRMAR COMPRA</button>
       </form>
     </main>
+    <div class="modal micromodal-slide" id="modal-checkout" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-checkout-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-checkout-title">
+              ¡Gracias por tu compra!
+            </h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-checkout-content">
+            <p>
+              Tu compra se ha efectuado de manera exitosa. <br>
+              Revisa tu colección de skins en el juego. 
+            </p>
+          </main>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <section class="footer__logo">
         <img src="./img/Footer/Footer_Logo.png" alt="VALORANT_Logo.png" />
@@ -135,6 +153,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script src="./scripts/firebase.js"></script>
   <script src="./scripts/auth.js"></script>
   <script src="./scripts/checkout.js"></script>
